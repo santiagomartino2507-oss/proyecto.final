@@ -1,0 +1,128 @@
+/* COMIENZO DE LA PAGINA*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("/paginaaaa/img/fondodelapagina.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    height: 90px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logo img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.title-logo{
+    color: #f3f9f3;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.signup{
+    margin-left: 20px;
+}
+.signup button{
+    margin: 0;
+}
+
+h2{
+    color: #f3f9f3;
+    font-size: 58px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+p{
+    color: #f6fbf6;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 100px;
+}
+button{
+    display: flex;
+    margin: 100px auto;
+    padding: 10px 20px;
+    background-color: #006d04;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 28px;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    width:fit-content;
+    justify-content: space-between;
+    background-color: rgb(67, 66, 66);
+    gap: 15px;
+    padding: 10px 10px;
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: 20px;
+
+}
+nav a{
+    text-decoration: none;
+    color: hsl(120, 23%, 97%);
+    padding: 20px 20px;
+    background-color: rgb(0, 71, 4);
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.2s;
+}
+nav a:hover{
+    background-color: #006d04;
+    color: #000000;
+    transform: scale(1.1);
+}
+/* FINAL DE LA PAGINA PRINCIPAL*/
+/* COMIENZO DE LA PAGINA DE RESERVAS*/
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+.card{
+    width: 270px;
+    height: 380px;
+    background: #b3b3b3;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.complex{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
