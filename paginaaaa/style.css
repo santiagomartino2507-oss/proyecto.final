@@ -12,8 +12,8 @@ body{
     background-image: url("/paginaaaa/img/fondodelapagina.png");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+    background-repeat: repeat;
+    height: 100%;
 }
 header{
     position: relative;
