@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        body {
+            background-color: #800000;
+            color: #888888;
+            font-family: 'Playfair Display', serif;
+        }
+        h1 {
+            color: #000000;
+            text-align: center;
+        }
+        nav {
+            background-color: #888888;
+        }
+        nav ul {
+            list-style: none;
+            padding: 10px;
+        }
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav a {
+            color: #800000;
+            text-decoration: none;
+        }
+        nav a:hover{
+            background-color: #800000;
+            color: #000000;
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+        }
+        h2 {
+            color: #000000;
+        }
+        form {
+    width: 300px;
+    margin: 20px auto;
+}
+form label {
+    display: block;
+    margin-top: 10px;
+}
+form input,
+form textarea {
+    width: 100%;
+    padding: 7px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+form textarea {
+    height: 100px;
+}
+form button {
+    margin-top: 10px;
+    padding: 7px 15px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fight Club</h1>
+        <nav>
+            <ul>
+                <li><a href="peliculaconcss.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre la pelicula</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <h1>Contacto</h1>
+
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</main>
+
+        <footer>
+        <p>© 2026 – Fight Club</p>
+    </footer>
+</body>
+</html>
