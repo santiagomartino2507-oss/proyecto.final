@@ -119,6 +119,50 @@ nav a:hover{
     color: #000000;
     transform: scale(1.1);
 }
+.footer {
+    background-color: #181818;
+    color: #737373;
+    padding: 60px 8% 30px;
+    margin-top: 80px;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-question {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-column a {
+    color: #737373;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+    color: #aaa;
+}
+
+.footer-copy {
+    margin-top: 20px;
+    font-size: 13px;
+}
 /*--------------------------------------------------------*/
 /* FINAL DE LA PAGINA PRINCIPAL*/
 /* COMIENZO DE LA PAGINA DE RESERVAS*/
@@ -189,7 +233,7 @@ nav a:hover{
 
 .profile h1 {
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .profile form {
@@ -243,4 +287,8 @@ nav a:hover{
 .back-button:hover {
     background-color: #00a52b;
     transform: scale(1.05);
+}
+.profile a{
+    text-decoration: none;
+    color: white;
 }
