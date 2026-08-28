@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>profile</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="paginaaaa/style.css">
 </head>
 <body>
 
-<a href="paginaprincipal.html" class="back-button">← Back</a>
+<a href="paginaaaa/paginaprincipal.html" class="back-button">← Back</a>
 
     <div class="profile">
 
         <h1>Welcome Back</h1>
-        <form>
+        <form  id="login-form" action="NewFolder/login.php" method="post">
 
             <label for="username">Username</label>
             <input type="text" id="username" name="username" placeholder="Enter your username">
@@ -21,12 +21,17 @@
             <label for="password">Password</label>
             <input type="password" id="password" name="password" placeholder="Enter your password">
 
-            <button type="submit">Sign Up</button>
+            <?php
+                if(isset($_GET['error']))
+                    echo "<label class='lbl lbl-error' >". $_GET['error']. "</label>";
+            ?>
+
+            <button type="submit">Sign In</button>
 
         </form>
         <span>
             Don't have an account?
-            <a href="register.html">Register</a>
+            <a href="paginaaaa/register.html" >Register</a>
         </span>
     </div>
 
