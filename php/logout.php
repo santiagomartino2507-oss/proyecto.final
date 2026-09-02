@@ -3,6 +3,6 @@
 session_start();
 session_unset();
 session_destroy();
-header('Location: /proyecto.html/index.php?view=login&success=You have been successfully logged out.');
+header('Location: /proyecto.html/pages/paginaprincipal.php');
 exit();
 ?>

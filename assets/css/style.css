@@ -37,18 +37,39 @@ header{
     color: #f3f9f3;
     font-size: 24px;
     font-weight: bold;
+    text-decoration: none;
 }
-.signup-button {
+.welcome-message {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.logout-button {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #800000;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 22px;
+    margin-left: 15px;
+}
+.logout-button:hover {
+    background-color: #ff0000;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+.login-button {
     display: inline-block;
     color: white;
     text-decoration: none;
     background-color: green;
     padding: 12px 25px;
-    border-radius: 6px;
+    border-radius: 25px;
     font-size: 22px;
 }
 
-.signup-button:hover {
+.login-button:hover {
     background-color: #00a52b;
 }
 h2{
@@ -283,14 +304,12 @@ nav a:hover{
     position: absolute;
     top: 25px;
     left: 30px;
-
     color: white;
     text-decoration: none;
     font-size: 20px;
     background-color: #006d04;
     padding: 10px 18px;
-    border-radius: 6px;
-
+    border-radius: 25px;
     transition: 0.2s;
 }
 

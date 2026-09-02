@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,10 +18,15 @@
             <a href="/proyecto.html/pages/bookings.html">Bookings</a>
             <a href="/proyecto.html/pages/contacts.html">Contact</a>
         </nav>
-        <div class="signup">
-            <a href="/proyecto.html/index.php?view=register" class="signup-button">Sign Up</a>
-        </div>
-
+        <?php
+        session_start();
+        if (isset($_SESSION['username'])) {
+            echo '<div class="welcome-message">' . htmlspecialchars($_SESSION['username']) . '</div>';
+            echo '<a href="/proyecto.html/php/logout.php" class="logout-button">Logout</a>';
+        } else {
+            echo '<a href="/proyecto.html/index.php?view=login" class="login-button">Login</a>';
+        }
+        ?>
     </header>
 
     <div class="inicio">

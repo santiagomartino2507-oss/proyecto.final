@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<a href="/proyecto.html/index.php" class="back-button">← Back</a>
+<a href="/proyecto.html/pages/paginaprincipal.php" class="back-button">← Back</a>
 
     <div class="profile">
 
