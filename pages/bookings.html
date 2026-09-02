@@ -45,7 +45,7 @@
 
         <div class="footer-links">
             <div class="footer-column">
-                <a href="/proyecto.html/pages/paginaprincipal.html">Home</a>
+                <a href="/proyecto.html/pages/paginaprincipal.php">Home</a>
                 <a href="/proyecto.html/pages/bookings.html">Bookings</a>
                 <a href="/proyecto.html/pages/contacts.html">Contact</a>
                 <a href="/proyecto.html/pages/info.html">Info</a>
