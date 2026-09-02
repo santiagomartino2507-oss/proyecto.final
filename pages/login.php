@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>profile</title>
-    <link rel="stylesheet" href="paginaaaa/style.css">
+    <link rel="stylesheet" href="/proyecto.html/assets/css/style.css">
 </head>
 <body>
 
-<a href="paginaaaa/paginaprincipal.html" class="back-button">← Back</a>
+<a href="/proyecto.html/index.php" class="back-button">← Back</a>
 
     <div class="profile">
 
         <h1>Welcome Back</h1>
-        <form  id="login-form" action="NewFolder/login.php" method="post">
+        <form  id="login-form" action="/proyecto.html/php/login.php" method="post">
 
             <label for="username">Username</label>
             <input type="text" id="username" name="username" placeholder="Enter your username">
@@ -31,7 +31,7 @@
         </form>
         <span>
             Don't have an account?
-            <a href="paginaaaa/register.html" >Register</a>
+            <a href="/proyecto.html/index.php?view=register" >Register</a>
         </span>
     </div>
 

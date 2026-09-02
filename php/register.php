@@ -20,11 +20,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("ss", $user, $hashed_password);
 
     if ($stmt->execute()) {
-        header("Location: login.html?success=Registration successful! Please log in.");
+        header('Location: /proyecto.html/index.php?view=login&success=Registration successful! Please log in.');
         exit();
     } else {
         // Redirect back to the register page if something fails (ex: username taken).
-        header("Location: register.html?error=Registration failed. Username may exist.");
+        header('Location: /proyecto.html/index.php?view=register&error=Registration failed. Username may exist.');
         exit();
     }
 

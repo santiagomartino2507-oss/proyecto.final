@@ -3,7 +3,7 @@ session_start();
 
 // If user is not logged in, redirect to login
 if (!isset($_SESSION['username'])) {
-    header("Location: paginaaaa/login.php?error=Please log in first");
+    header('Location: /proyecto.html/index.php?view=login&error=Please log in first');
     exit();
 }
 ?>

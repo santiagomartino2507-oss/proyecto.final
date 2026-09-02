@@ -9,7 +9,7 @@ html, body{
     padding: 0;
 }
 body{
-    background-image: url("./img/fondodelapagina.png");
+    background-image: url("/proyecto.html/paginaaaa/img/fondodelapagina.png");
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -239,6 +239,10 @@ nav a:hover{
 .profile form {
     display: flex;
     flex-direction: column;
+    background: transparent;
+    box-shadow: none;
+    max-width: none;
+    padding: 0;
 }
 
 .profile label {
@@ -254,6 +258,12 @@ nav a:hover{
     border: none;
     border-radius: 5px;
     font-size: 16px;
+    background: white;
+    color: #111;
+}
+
+.profile input::placeholder {
+    color: #666;
 }
 
 .profile button {
@@ -434,24 +444,40 @@ button:hover {
     background-color: #0056b3;
 }
 
-.error { color: #cc0000; font-weight: bold; margin-top: 15px;}
+.error {
+    color: #ff3b30 !important;
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+    min-height: 20px;
+}
 .success { color: #008800; font-weight: bold; margin-top: 15px;}
 .welcome { color: #008800; font-size: 24px; font-weight: bold; }
 .logout { margin-top: 20px; }
 
-#login-form label{
-    color: rgb(78 78 78) !important;
-} 
+#login-form label {
+    color: white !important;
+}
 
-.lbl{
-    width: 80%;
-    margin-left: 10%;
-    align-items: center;
+#feedback {
+    color: #ff3b30 !important;
+    display: block;
+    min-height: 20px;
+}
+
+.lbl {
+    width: 100%;
+    display: block;
+    margin: 0 0 12px 0;
     color: #000000 !important;
-    font: bold;
+    font-weight: bold;
+    text-align: center;
 }
 
-.lbl-error{
-    background: red;
+.lbl-error {
+    background: #800000;
+    color: #ffffff !important;
+    padding: 10px 12px;
+    border-radius: 5px;
+    display: block;
 }
-

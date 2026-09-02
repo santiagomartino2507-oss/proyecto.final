@@ -20,12 +20,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Verify password against hash
         if (password_verify($input_pass, $user['password'])) {
             $_SESSION['username'] = $user['username'];
-            header("Location: welcome.php");
+            header('Location: /proyecto.html/php/welcome.php');
             exit();
         }
-    } 
-    
-    header("Location: ../?view=login&error=Invalid username or password");
+    }
+
+    header('Location: /proyecto.html/index.php?view=login&error=Invalid username or password');
     exit();
 }
 ?>
