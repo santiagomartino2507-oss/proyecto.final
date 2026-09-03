@@ -24,7 +24,7 @@
             echo '<div class="welcome-message">' . htmlspecialchars($_SESSION['username']) . '</div>';
             echo '<a href="/proyecto.html/php/logout.php" class="logout-button">Logout</a>';
         } else {
-            echo '<a href="/proyecto.html/index.php?view=login" class="login-button">Login</a>';
+            echo '<a href="/proyecto.html/index.php?view=login" class="login-button">Account</a>';
         }
         ?>
     </header>

@@ -9,11 +9,13 @@ html, body{
     padding: 0;
 }
 body{
-    background-image: url("/proyecto.html/paginaaaa/img/fondodelapagina.png");
+    background-image: url("/proyecto.html/img/fondodelapagina.png");
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
-    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 header{
     position: relative;
@@ -116,6 +118,7 @@ p{
 }
 nav{
     display: flex;
+    flex-wrap: wrap;
     width:fit-content;
     justify-content: space-between;
     background-color: rgb(67, 66, 66);
@@ -144,7 +147,8 @@ nav a:hover{
     background-color: #181818;
     color: #737373;
     padding: 60px 8% 30px;
-    margin-top: 80px;
+    width: 100%;
+    margin-top: auto;
 }
 
 .footer-content {
@@ -190,6 +194,7 @@ nav a:hover{
 /*--------------------------------------------------------*/
 .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     padding: 30px;
@@ -198,6 +203,7 @@ nav a:hover{
 .card{
     width: 270px;
     height: 380px;
+    flex: 0 0 270px;
 
     background: #6b6b6b;
     border-radius: 20px;
@@ -428,7 +434,7 @@ nav a:hover{
 
 body { 
     font-family: Arial, sans-serif; 
-    padding: 20px; 
+    padding: 0;
     background-color: #f4f4f4; 
 }
 
@@ -499,4 +505,198 @@ button:hover {
     padding: 10px 12px;
     border-radius: 5px;
     display: block;
+}
+
+@media (max-width: 900px) {
+    header {
+        height: auto;
+        min-height: 90px;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    nav {
+        max-width: 100%;
+        margin: 0 0 0 auto;
+    }
+
+    nav a {
+        padding: 14px 16px;
+    }
+
+    .welcome-message,
+    .logout-button,
+    .login-button {
+        margin-left: 0;
+    }
+
+    .welcome-message {
+        margin-left: auto;
+    }
+
+    h2 {
+        font-size: 46px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .profile,
+    .contact-box,
+    .info-box {
+        width: min(100% - 40px, 650px);
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo {
+        gap: 8px;
+    }
+
+    .logo img {
+        width: 62px;
+        height: 62px;
+    }
+
+    .title-logo {
+        font-size: 18px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        gap: 8px;
+        margin: 0;
+    }
+
+    nav a {
+        flex: 1 1 100px;
+        padding: 12px 8px;
+        text-align: center;
+    }
+
+    .welcome-message,
+    .logout-button,
+    .login-button {
+        font-size: 16px;
+    }
+
+    .logout-button,
+    .login-button {
+        padding: 10px 16px;
+    }
+
+    .inicio {
+        min-height: calc(100vh - 160px);
+        transform: none;
+        padding: 30px 10px;
+    }
+
+    h2 {
+        font-size: 36px;
+        margin-top: 20px;
+    }
+
+    p {
+        font-size: 24px;
+        margin-top: 25px;
+    }
+
+    .inicio a {
+        margin: 35px auto;
+        font-size: 22px;
+    }
+
+    .container {
+        max-width: none;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    .card {
+        width: min(100%, 320px);
+        height: 350px;
+        flex: 1 1 100%;
+    }
+
+    .card p {
+        font-size: 26px;
+    }
+
+    .profile,
+    .contact-box,
+    .info-box {
+        width: 100%;
+        padding: 25px 18px;
+        margin: 60px auto;
+    }
+
+    .contact-box h1,
+    .info-box h1 {
+        font-size: 34px;
+    }
+
+    .back-button {
+        position: static;
+        display: inline-block;
+        margin: 10px 0 0 10px;
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 40px 20px 25px;
+        margin-top: auto;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    .welcome-message {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .logout-button,
+    .login-button {
+        flex: 1;
+        text-align: center;
+    }
+
+    nav a {
+        flex-basis: 80px;
+        font-size: 14px;
+    }
+
+    .card {
+        height: 330px;
+    }
+
+    .complex {
+        font-size: 19px;
+    }
+
+    .card p {
+        font-size: 23px;
+    }
 }
