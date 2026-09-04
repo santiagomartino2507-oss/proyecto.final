@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +40,7 @@
     <footer class="footer">
     <div class="footer-content">
 
-        <p class="footer-question">¿questions? Contact us.</p>
+        <p class="footer-question">Questions? Contact us.</p>
 
         <div class="footer-links">
             <div class="footer-column">
