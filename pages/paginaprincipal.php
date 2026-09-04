@@ -14,7 +14,7 @@
             <h1 class="title-logo">PITCH <br> POINT</h1>
         </div>
         <nav>
-            <a href="/proyecto.html/pages/info.html">info</a>
+            <a href="/proyecto.html/pages/info.html">Info</a>
             <a href="/proyecto.html/pages/bookings.html">Bookings</a>
             <a href="/proyecto.html/pages/contacts.html">Contact</a>
         </nav>
