@@ -700,3 +700,120 @@ button:hover {
         font-size: 23px;
     }
 }
+/* SECCIÓN BIENVENIDA */
+.welcomeSection {
+  text-align: center;
+  margin-bottom: 40px;
+}
+h1 {
+  font-size: 38px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+h2 {
+  color: #f3f9f3;
+  font-size: 30px; /* Ajustado de 58px para guardar proporción */
+  font-weight: bold;
+  margin: 35px 0 20px 0;
+  text-align: center;
+}
+/* AJUSTE CLAVE: Tamaño de párrafos generales */
+p {
+  color: #f6fbf6;
+  font-size: 16px; /* Cambiado de 38px a 16px */
+  text-align: center;
+  margin: 8px 0;    /* Cambiado de margin-top: 50px */
+}
+/* CANCHAS */
+.field-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.field-card {
+  width: 260px;
+  background-color: #2b2b2b;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+.field-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.field-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+/* Párrafos dentro de la tarjeta de cancha */
+.field-card p {
+  font-size: 14px;
+  margin: 4px 0;
+  text-align: left;
+  width: 100%;
+}
+.field-card p.precio {
+  font-size: 18px;
+  font-weight: bold;
+  color: #00a52b;
+  text-align: center;
+  margin-top: 12px;
+}
+/* BOTÓN RESERVAR */
+.boton-reservar {
+  display: inline-block;
+  background-color: #006d04;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+.boton-reservar:hover {
+  background-color: #00a52b;
+  transform: scale(1.05);
+}
+/* TABLA DE PRECIOS */
+.tabla-precios {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #2b2b2b;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.tabla-precios th, 
+.tabla-precios td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #3d3d3d;
+}
+.tabla-precios th {
+  background-color: #006d04;
+  color: white;
+}
+/* HORARIOS Y UBICACIÓN */
+.schedule, .ubication {
+  text-align: center;
+  max-width: 800px;
+  margin: 40px auto;
+}
+iframe {
+  margin-top: 15px;
+  border-radius: 8px;
+}
