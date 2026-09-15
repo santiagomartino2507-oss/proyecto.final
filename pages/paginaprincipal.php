@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -24,6 +24,7 @@
             </button>
         </nav>
 
+
         <div class="user-actions"> <!-- Wraps user info and login/logout button into a single grid item -->
             <?php
             session_start();
@@ -38,7 +39,11 @@
     </header>
 
     <div class="inicio">
-        <section data-i18n-block="welcome"></section>
+        <section data-i18n-block="welcome">
+            <h2>Welcome</h2>
+            <p>Ready to book your field?</p>
+            <a href='/proyecto.html/pages/bookings.html' class='book-now'>Book Now</a>
+        </section>
     </div>
 
     </div>
