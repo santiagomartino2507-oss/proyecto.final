@@ -1,0 +1,8 @@
+{
+  "en": {
+    "welcome": "<h2>Welcome</h2><p>Ready to book your field?</p><a href='/proyecto.html/pages/bookings.html' class='book-now'>Book Now</a>"
+  },
+  "es": {
+    "welcome": "<h2>Bienvenido</h2><p>¿Listo para reservar tu cancha?</p><a href='/proyecto.html/pages/bookings.html' class='book-now'>Reservar Ahora</a>"
+  }
+}

@@ -1,701 +1,744 @@
 /* COMIENZO DE LA PAGINA*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html, body{
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-image: url("/proyecto.html/img/fondodelapagina.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+body {
+  background-image: url("/proyecto.html/img/fondodelapagina.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-header{
-    position: relative;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    padding: 0 30px;
-    height: 90px;
+header {
+  position: relative;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* equal side columns force nav to stay centered */
+  align-items: center;
+  padding: 0 30px;
+  height: 90px;
 }
-.logo{
-    display: flex;
-    align-items: center;
-    gap: 15px;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
-.logo img{
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
+.logo img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
 }
-.title-logo{
-    color: #f3f9f3;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
+.title-logo {
+  color: #f3f9f3;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
 }
 .welcome-message {
-    color: white;
-    font-size: 20px;
-    margin-left: 10px;
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
 }
 .logout-button {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    background-color: #800000;
-    padding: 12px 25px;
-    border-radius: 25px;
-    font-size: 22px;
-    margin-left: 15px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: #800000;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 22px;
+  margin-left: 15px;
 }
 .logout-button:hover {
-    background-color: #ff0000;
-    transform: scale(1.05);
-    transition: 0.2s;
+  background-color: #ff0000;
+  transform: scale(1.05);
+  transition: 0.2s;
 }
 .login-button {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    background-color: green;
-    padding: 12px 25px;
-    border-radius: 25px;
-    font-size: 22px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: green;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 22px;
 }
-
 .login-button:hover {
-    background-color: #00a52b;
+  background-color: #00a52b;
 }
-h2{
-    color: #f3f9f3;
-    font-size: 58px;
-    font-weight: bold;
-    margin-top: 50px;
-    text-align: center;
+.user-actions {
+  /* container for username and logout button */
+  display: flex; /* places username and button side by side */
+  align-items: center; /* vertically centers them */
+  justify-content: flex-end; /* pushes them to the right of the header */
+  gap: 10px; /* space between username and button */
 }
-p{
-    color: #f6fbf6;
-    font-size: 38px;
-    text-align: center;
-    margin-top: 50px;
+h2 {
+  color: #f3f9f3;
+  font-size: 58px;
+  font-weight: bold;
+  margin-top: 50px;
+  text-align: center;
+}
+p {
+  color: #f6fbf6;
+  font-size: 38px;
+  text-align: center;
+  margin-top: 50px;
 }
 .inicio {
-    position: relative;
-    z-index: 1;
-    min-height: calc(100vh - 95px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    transform: translateY(-100px);
+  position: relative;
+  z-index: 1;
+  min-height: calc(100vh - 95px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: translateY(-100px);
 }
 .inicio a {
-    display: inline-block;
-    margin: 50px auto;
-    padding: 10px 20px;
-    background-color: #006d04;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 28px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: 0.2s;
+  display: inline-block;
+  margin: 50px auto;
+  padding: 10px 20px;
+  background-color: #006d04;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 28px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
 }
 
 .inicio a:hover {
-    background-color: #00a52b;
-    transform: scale(1.05);
+  background-color: #00a52b;
+  transform: scale(1.05);
 }
-nav{
-    display: flex;
-    flex-wrap: wrap;
-    width:fit-content;
-    justify-content: space-between;
-    background-color: rgb(67, 66, 66);
-    gap: 15px;
-    padding: 10px 10px;
-    display: flex;
-    gap: 15px;
-    margin-left: auto;
-    margin-right: 20px;
-
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.45); /* semi-transparent background */
+  gap: 15px;
+  padding: 10px 10px;
+  margin: 0 auto;
 }
-nav a{
-    text-decoration: none;
+nav a {
+  text-decoration: none;
+  color: hsl(120, 23%, 97%);
+  padding: 20px 20px;
+  background-color: rgb(0, 71, 4);
+  border-radius: 5px;
+  transition:
+    background-color 0.2s,
+    color 0.2s,
+    transform 0.2s;
+  display: inline-block;
+}
+nav a:hover {
+  background-color: #006d04;
+  color: #000000;
+  transform: scale(1.1);
+}
+#lang-toggle {
+    background-color: rgb(0, 71, 4); 
     color: hsl(120, 23%, 97%);
-    padding: 20px 20px;
-    background-color: rgb(0, 71, 4);
+    border: none;
+    padding: 10px 15px;
     border-radius: 5px;
-    transition: background-color 0.2s, color 0.2s;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    width: fit-content;  
+    margin-top: 0;       
+    display: inline-block;
 }
-nav a:hover{
-    background-color: #006d04;
-    color: #000000;
-    transform: scale(1.1);
+#lang-toggle:hover {
+  background-color: #006d04;
+  transform: scale(1.1);
+}
+#lang-toggle img {
+  width: 28px;
+  height: auto;
+  border-radius: 3px;
+  vertical-align: middle;
 }
 .footer {
-    background-color: #181818;
-    color: #737373;
-    padding: 60px 8% 30px;
-    width: 100%;
-    margin-top: auto;
+  background-color: #181818;
+  color: #737373;
+  padding: 60px 8% 30px;
+  width: 100%;
+  margin-top: auto;
 }
 
 .footer-content {
-    max-width: 1100px;
-    margin: auto;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .footer-question {
-    font-size: 16px;
-    margin-bottom: 30px;
+  font-size: 16px;
+  margin-bottom: 30px;
 }
 
 .footer-links {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
 
 .footer-column {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .footer-column a {
-    color: #737373;
-    text-decoration: none;
-    font-size: 14px;
+  color: #737373;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .footer-column a:hover {
-    text-decoration: underline;
-    color: #aaa;
+  text-decoration: underline;
+  color: #aaa;
 }
 
 .footer-copy {
-    margin-top: 20px;
-    font-size: 13px;
+  margin-top: 20px;
+  font-size: 13px;
 }
 /*--------------------------------------------------------*/
 /* FINAL DE LA PAGINA PRINCIPAL*/
 /* COMIENZO DE LA PAGINA DE RESERVAS*/
 /*--------------------------------------------------------*/
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 30px;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
 }
 
-.card{
-    width: 270px;
-    height: 380px;
-    flex: 0 0 270px;
+.card {
+  width: 270px;
+  height: 380px;
+  flex: 0 0 270px;
 
-    background: #6b6b6b;
-    border-radius: 20px;
+  background: #6b6b6b;
+  border-radius: 20px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    padding: 15px;
-    box-sizing: border-box;
+  padding: 15px;
+  box-sizing: border-box;
 
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 
-    transition: .3s;
+  transition: 0.3s;
 }
 
-.card:hover{
-    transform: translateY(-8px);
+.card:hover {
+  transform: translateY(-8px);
 }
 
-.complex{
-    background: green;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 22px;
-    font-weight: bold;
+.complex {
+  background: green;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
-.card img{
-    width: 100%;
-    height: 170px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-top: 20px;
+.card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 20px;
 }
 
-.card p{
-    font-size: 32px;
-    text-align: center;
-    margin-top: auto;
+.card p {
+  font-size: 32px;
+  text-align: center;
+  margin-top: auto;
 }
 /*--------------------------------------------------------*/
 /*COMIENZO DE PROFILE*/
 /*--------------------------------------------------------*/
 .profile {
-    width: 400px;
-    margin: 100px auto;
-    padding: 35px;
-    background-color: rgba(67, 66, 66, 0.9);
-    border-radius: 15px;
-    text-align: center;
+  width: 400px;
+  margin: 100px auto;
+  padding: 35px;
+  background-color: rgba(67, 66, 66, 0.9);
+  border-radius: 15px;
+  text-align: center;
 }
 
 .profile h1 {
-    color: white;
-    margin-bottom: 20px;
+  color: white;
+  margin-bottom: 20px;
 }
 
 .profile form {
-    display: flex;
-    flex-direction: column;
-    background: transparent;
-    box-shadow: none;
-    max-width: none;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  box-shadow: none;
+  max-width: none;
+  padding: 0;
 }
 
 .profile label {
-    color: white;
-    text-align: left;
-    margin-bottom: 8px;
-    font-size: 18px;
+  color: white;
+  text-align: left;
+  margin-bottom: 8px;
+  font-size: 18px;
 }
 
 .profile input {
-    padding: 12px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    background: white;
-    color: #111;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background: white;
+  color: #111;
 }
 
 .profile input::placeholder {
-    color: #666;
+  color: #666;
 }
 
 .profile button {
-    padding: 12px;
-    background-color: #006d04;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    cursor: pointer;
+  padding: 12px;
+  background-color: #006d04;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .profile button:hover {
-    background-color: #00a52b;
+  background-color: #00a52b;
 }
 .back-button {
-    position: absolute;
-    top: 25px;
-    left: 30px;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    background-color: #006d04;
-    padding: 10px 18px;
-    border-radius: 25px;
-    transition: 0.2s;
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #006d04;
+  padding: 10px 18px;
+  border-radius: 25px;
+  transition: 0.2s;
 }
 
 .back-button:hover {
-    background-color: #00a52b;
-    transform: scale(1.05);
+  background-color: #00a52b;
+  transform: scale(1.05);
 }
-.profile a{
-    text-decoration: none;
-    color: white;
+.profile a {
+  text-decoration: none;
+  color: white;
 }
 /*-------------------------------------------*/
 /*COMIENZO DE LA PAGINA DE CONTACTOS*/
 /*-------------------------------------------*/
 .contact-page {
-    min-height: calc(100vh - 90px);
+  min-height: calc(100vh - 90px);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    text-align: center;
+  text-align: center;
 }
 
 .contact-box {
-    width: 500px;
-    padding: 40px;
+  width: 500px;
+  padding: 40px;
 
-    background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.65);
 
-    border-radius: 15px;
+  border-radius: 15px;
 
-    color: white;
+  color: white;
 }
 
 .contact-box h1 {
-    font-size: 45px;
-    margin-bottom: 15px;
+  font-size: 45px;
+  margin-bottom: 15px;
 }
 
 .contact-text {
-    font-size: 20px;
-    margin-bottom: 30px;
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 
 .contact-item {
-    padding: 15px;
-    margin: 15px 0;
+  padding: 15px;
+  margin: 15px 0;
 
-    background-color: rgba(0, 109, 4, 0.5);
+  background-color: rgba(0, 109, 4, 0.5);
 
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .contact-item h2 {
-    font-size: 22px;
-    margin-bottom: 5px;
+  font-size: 22px;
+  margin-bottom: 5px;
 }
 
 .contact-item p {
-    font-size: 18px;
+  font-size: 18px;
 }
 /*----------------------------------------------*/
 /*COMIENZO DE LA PAGINA DE INFO*/
 /*----------------------------------------------*/
 .info-page {
-    min-height: calc(100vh - 90px);
+  min-height: calc(100vh - 90px);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    text-align: center;
+  text-align: center;
 }
 
 .info-box {
-    width: 650px;
-    padding: 40px;
+  width: 650px;
+  padding: 40px;
 
-    background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.65);
 
-    border-radius: 15px;
+  border-radius: 15px;
 
-    color: white;
+  color: white;
 }
 
 .info-box h1 {
-    font-size: 45px;
-    margin-bottom: 20px;
+  font-size: 45px;
+  margin-bottom: 20px;
 }
 
 .info-box > p {
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 25px;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 25px;
 }
 
 .info-item {
-    padding: 18px;
-    margin: 15px 0;
+  padding: 18px;
+  margin: 15px 0;
 
-    background-color: rgba(0, 109, 4, 0.5);
+  background-color: rgba(0, 109, 4, 0.5);
 
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .info-item h2 {
-    font-size: 23px;
-    margin-bottom: 8px;
+  font-size: 23px;
+  margin-bottom: 8px;
 }
 
 .info-item p {
-    font-size: 17px;
-    line-height: 1.4;
+  font-size: 17px;
+  line-height: 1.4;
 }
 
-body { 
-    font-family: Arial, sans-serif; 
-    padding: 0;
-    background-color: #f4f4f4; 
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
 form {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    max-width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
 }
 
-input { 
-    margin: 10px 0; 
-    display: block; 
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
+input {
+  margin: 10px 0;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
 }
 
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 .error {
-    color: #ff3b30 !important;
-    font-weight: bold;
-    margin-top: 15px;
-    display: block;
-    min-height: 20px;
+  color: #ff3b30 !important;
+  font-weight: bold;
+  margin-top: 15px;
+  display: block;
+  min-height: 20px;
 }
-.success { color: #008800; font-weight: bold; margin-top: 15px;}
-.welcome { color: #008800; font-size: 24px; font-weight: bold; }
-.logout { margin-top: 20px; }
+.success {
+  color: #008800;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.welcome {
+  color: #008800;
+  font-size: 24px;
+  font-weight: bold;
+}
+.logout {
+  margin-top: 20px;
+}
 
 #login-form label {
-    color: white !important;
+  color: white !important;
 }
 
 #feedback {
-    color: #800000 !important;
-    display: block;
-    min-height: 20px;
+  color: #800000 !important;
+  display: block;
+  min-height: 20px;
 }
 
 .lbl {
-    width: 100%;
-    display: block;
-    margin: 0 0 12px 0;
-    color: #000000 !important;
-    font-weight: bold;
-    text-align: center;
+  width: 100%;
+  display: block;
+  margin: 0 0 12px 0;
+  color: #000000 !important;
+  font-weight: bold;
+  text-align: center;
 }
 
 .lbl-error {
-    background: #800000;
-    color: #ffffff !important;
-    padding: 10px 12px;
-    border-radius: 5px;
-    display: block;
+  background: #800000;
+  color: #ffffff !important;
+  padding: 10px 12px;
+  border-radius: 5px;
+  display: block;
 }
 
 @media (max-width: 900px) {
-    header {
-        height: auto;
-        min-height: 90px;
-        flex-wrap: wrap;
-        gap: 15px;
-        padding: 15px 20px;
-    }
+  header {
+    height: auto;
+    min-height: 90px;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 20px;
+  }
 
-    nav {
-        max-width: 100%;
-        margin: 0 0 0 auto;
-    }
+  nav {
+    max-width: 100%;
+    margin: 0 0 0 auto;
+  }
 
-    nav a {
-        padding: 14px 16px;
-    }
+  nav a {
+    padding: 14px 16px;
+  }
 
-    .welcome-message,
-    .logout-button,
-    .login-button {
-        margin-left: 0;
-    }
+  .welcome-message,
+  .logout-button,
+  .login-button {
+    margin-left: 0;
+  }
 
-    .welcome-message {
-        margin-left: auto;
-    }
+  .welcome-message {
+    margin-left: auto;
+  }
 
-    h2 {
-        font-size: 46px;
-    }
+  h2 {
+    font-size: 46px;
+  }
 
-    p {
-        font-size: 30px;
-    }
+  p {
+    font-size: 30px;
+  }
 
-    .footer-links {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+  .footer-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
-    .profile,
-    .contact-box,
-    .info-box {
-        width: min(100% - 40px, 650px);
-    }
+  .profile,
+  .contact-box,
+  .info-box {
+    width: min(100% - 40px, 650px);
+  }
 
-    .container {
-        max-width: 600px;
-        margin: 0 auto;
-    }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 600px) {
-    header {
-        align-items: flex-start;
-        padding: 10px;
-    }
+  header {
+    align-items: flex-start;
+    padding: 10px;
+  }
 
-    .logo {
-        gap: 8px;
-    }
+  .logo {
+    gap: 8px;
+  }
 
-    .logo img {
-        width: 62px;
-        height: 62px;
-    }
+  .logo img {
+    width: 62px;
+    height: 62px;
+  }
 
-    .title-logo {
-        font-size: 18px;
-    }
+  .title-logo {
+    font-size: 18px;
+  }
 
-    nav {
-        width: 100%;
-        justify-content: center;
-        gap: 8px;
-        margin: 0;
-    }
+  nav {
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+    margin: 0;
+  }
 
-    nav a {
-        flex: 1 1 100px;
-        padding: 12px 8px;
-        text-align: center;
-    }
+  nav a {
+    flex: 1 1 100px;
+    padding: 12px 8px;
+    text-align: center;
+  }
 
-    .welcome-message,
-    .logout-button,
-    .login-button {
-        font-size: 16px;
-    }
+  .welcome-message,
+  .logout-button,
+  .login-button {
+    font-size: 16px;
+  }
 
-    .logout-button,
-    .login-button {
-        padding: 10px 16px;
-    }
+  .logout-button,
+  .login-button {
+    padding: 10px 16px;
+  }
 
-    .inicio {
-        min-height: calc(100vh - 160px);
-        transform: none;
-        padding: 30px 10px;
-    }
+  .inicio {
+    min-height: calc(100vh - 160px);
+    transform: none;
+    padding: 30px 10px;
+  }
 
-    h2 {
-        font-size: 36px;
-        margin-top: 20px;
-    }
+  h2 {
+    font-size: 36px;
+    margin-top: 20px;
+  }
 
-    p {
-        font-size: 24px;
-        margin-top: 25px;
-    }
+  p {
+    font-size: 24px;
+    margin-top: 25px;
+  }
 
-    .inicio a {
-        margin: 35px auto;
-        font-size: 22px;
-    }
+  .inicio a {
+    margin: 35px auto;
+    font-size: 22px;
+  }
 
-    .container {
-        max-width: none;
-        gap: 20px;
-        padding: 20px 10px;
-    }
+  .container {
+    max-width: none;
+    gap: 20px;
+    padding: 20px 10px;
+  }
 
-    .card {
-        width: min(100%, 320px);
-        height: 350px;
-        flex: 1 1 100%;
-    }
+  .card {
+    width: min(100%, 320px);
+    height: 350px;
+    flex: 1 1 100%;
+  }
 
-    .card p {
-        font-size: 26px;
-    }
+  .card p {
+    font-size: 26px;
+  }
 
-    .profile,
-    .contact-box,
-    .info-box {
-        width: 100%;
-        padding: 25px 18px;
-        margin: 60px auto;
-    }
+  .profile,
+  .contact-box,
+  .info-box {
+    width: 100%;
+    padding: 25px 18px;
+    margin: 60px auto;
+  }
 
-    .contact-box h1,
-    .info-box h1 {
-        font-size: 34px;
-    }
+  .contact-box h1,
+  .info-box h1 {
+    font-size: 34px;
+  }
 
-    .back-button {
-        position: static;
-        display: inline-block;
-        margin: 10px 0 0 10px;
-        font-size: 16px;
-    }
+  .back-button {
+    position: static;
+    display: inline-block;
+    margin: 10px 0 0 10px;
+    font-size: 16px;
+  }
 
-    .footer {
-        padding: 40px 20px 25px;
-        margin-top: auto;
-    }
+  .footer {
+    padding: 40px 20px 25px;
+    margin-top: auto;
+  }
 
-    .footer-links {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
 }
 
 @media (max-width: 400px) {
-    .welcome-message {
-        width: 100%;
-        margin-left: 0;
-        text-align: center;
-    }
+  .welcome-message {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
 
-    .logout-button,
-    .login-button {
-        flex: 1;
-        text-align: center;
-    }
+  .logout-button,
+  .login-button {
+    flex: 1;
+    text-align: center;
+  }
 
-    nav a {
-        flex-basis: 80px;
-        font-size: 14px;
-    }
+  nav a {
+    flex-basis: 80px;
+    font-size: 14px;
+  }
 
-    .card {
-        height: 330px;
-    }
+  .card {
+    height: 330px;
+  }
 
-    .complex {
-        font-size: 19px;
-    }
+  .complex {
+    font-size: 19px;
+  }
 
+<<<<<<< HEAD
     .card p {
         font-size: 23px;
     }
@@ -817,3 +860,9 @@ iframe {
   margin-top: 15px;
   border-radius: 8px;
 }
+=======
+  .card p {
+    font-size: 23px;
+  }
+}
+>>>>>>> 6e8de0de6cf16e41fb6a2a5346c12f23d300e5ed
