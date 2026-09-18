@@ -1,8 +1,24 @@
 {
   "en": {
-    "welcome": "<h2>Welcome</h2><p>Ready to book your field?</p><a href='/proyecto.html/pages/bookings.html' class='book-now'>Book Now</a>"
+    "welcome": "<h2>Welcome</h2><p>Ready to book your field?</p><a href='/proyecto.html/pages/bookings.html' class='book-now'>Book Now</a>",
+    "navbar": "<a href=\"/proyecto.html/pages/info.html\">Info</a><a href=\"/proyecto.html/pages/bookings.html\">Bookings</a><a href=\"/proyecto.html/pages/contacts.html\">Contact</a>",
+    "navbarB": "<a href=\"/proyecto.html/pages/info.html\">Info</a><a href=\"/proyecto.html/pages/paginaprincipal.php\">Home</a><a href=\"/proyecto.html/pages/contacts.html\">Contact</a>",
+    "logout": "Logout",
+    "account": "Account",
+    "footer": "Questions? Contact us.",
+    "la10": "Complex La 10",
+    "DonBosco": "Complex Don Bosco",
+    "PFutbol": "Complex Planeta Fútbol"
   },
   "es": {
-    "welcome": "<h2>Bienvenido</h2><p>¿Listo para reservar tu cancha?</p><a href='/proyecto.html/pages/bookings.html' class='book-now'>Reservar Ahora</a>"
+    "welcome": "<h2>Bienvenido</h2><p>¿Listo para reservar tu cancha?</p><a href='/proyecto.html/pages/bookings.html' class='book-now'>Reservar Ahora</a>",
+    "navbar": "<a href=\"/proyecto.html/pages/info.html\">Info</a><a href=\"/proyecto.html/pages/bookings.html\">Reservas</a><a href=\"/proyecto.html/pages/contacts.html\">Contacto</a>",
+    "navbarB": "<a href=\"/proyecto.html/pages/info.html\">Info</a><a href=\"/proyecto.html/pages/paginaprincipal.php\">Inicio</a><a href=\"/proyecto.html/pages/contacts.html\">Contacto</a>",
+    "logout": "Cerrar sesión",
+    "account": "Cuenta",
+    "footer": "¿Preguntas? Contáctanos.",
+    "la10": "Complejo La 10",
+    "DonBosco": "Complejo Don Bosco",
+    "PFutbol": "Complejo Planeta Fútbol"
   }
 }
