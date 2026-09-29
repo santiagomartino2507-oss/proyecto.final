@@ -230,6 +230,9 @@ section[data-i18n-block="navbarB"] {
 /* FINAL DE LA PAGINA PRINCIPAL*/
 /* COMIENZO DE LA PAGINA DE RESERVAS*/
 /*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+/* PAGINA DE RESERVAS Y CANCHAS */
+/*--------------------------------------------------------*/
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -238,24 +241,19 @@ section[data-i18n-block="navbarB"] {
   padding: 30px;
 }
 
-.card p {
-  width: 270px;
-  height: 380px;
-  flex: 0 0 270px;
 
+.card {
+  width: 270px;
+  min-height: 380px;
   background: #6b6b6b;
   border-radius: 20px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding: 15px;
   box-sizing: border-box;
-
   text-decoration: none;
   color: white;
-
   transition: 0.3s;
 }
 
@@ -265,9 +263,11 @@ section[data-i18n-block="navbarB"] {
 
 .complex {
   background: green;
+  color: white;
+  text-decoration: none;
   padding: 10px 20px;
   border-radius: 8px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -276,11 +276,18 @@ section[data-i18n-block="navbarB"] {
   height: 170px;
   object-fit: cover;
   border-radius: 12px;
-  margin-top: 20px;
+  margin-top: 15px;
+}
+
+
+.card p, 
+.card a {
+  color: white;
+  text-decoration: none;
 }
 
 .card p {
-  font-size: 32px;
+  font-size: 22px;
   text-align: center;
   margin-top: auto;
 }
@@ -744,11 +751,11 @@ button:hover {
     font-size: 19px;
   }
 
-<<<<<<< HEAD
-    .card p {
-        font-size: 23px;
-    }
+  .card p {
+    font-size: 23px;
+  }
 }
+
 /* SECCIÓN BIENVENIDA */
 .welcomeSection {
   text-align: center;
@@ -761,17 +768,17 @@ h1 {
 }
 h2 {
   color: #f3f9f3;
-  font-size: 30px; /* Ajustado de 58px para guardar proporción */
+  font-size: 58px;
   font-weight: bold;
   margin: 35px 0 20px 0;
   text-align: center;
 }
-/* AJUSTE CLAVE: Tamaño de párrafos generales */
+
 p {
   color: #f6fbf6;
-  font-size: 16px; /* Cambiado de 38px a 16px */
+  font-size: 38px; 
   text-align: center;
-  margin: 8px 0;    /* Cambiado de margin-top: 50px */
+  margin: 8px 0;
 }
 /* CANCHAS */
 .field-container {
@@ -805,7 +812,7 @@ p {
   margin-bottom: 10px;
   color: #ffffff;
 }
-/* Párrafos dentro de la tarjeta de cancha */
+
 .field-card p {
   font-size: 14px;
   margin: 4px 0;
@@ -866,9 +873,3 @@ iframe {
   margin-top: 15px;
   border-radius: 8px;
 }
-=======
-  .card p {
-    font-size: 23px;
-  }
-}
->>>>>>> 6e8de0de6cf16e41fb6a2a5346c12f23d300e5ed
