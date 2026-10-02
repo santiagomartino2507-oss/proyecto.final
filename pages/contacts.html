@@ -12,11 +12,22 @@
       >← Back</a
     >
 
+    <div class="lang-btn-fixed">
+      <button id="lang-toggle" onclick="toggleLanguage()">
+        <img
+          id="lang-flag"
+          src="https://flagcdn.com/24x18/mx.png"
+          alt="Switch to Spanish"
+        />
+      </button>
+    </div>
+
     <div class="contact-page">
       <div class="contact-box">
-        <h1>Contact Us</h1>
-
-        <p class="contact-text">Have any questions? Get in touch with us.</p>
+        <section data-i18n-block="contact">
+          <h1>Contact Us</h1>
+          <p class="contact-text">Have any questions? Get in touch with us.</p>
+        </section>
 
         <div class="contact-item">
           <h2>Email</h2>
@@ -24,19 +35,21 @@
         </div>
 
         <div class="contact-item">
-          <h2>Phone</h2>
+          <h2 data-i18n="phone">Phone</h2>
           <p>+598 99 123 456</p>
         </div>
 
         <div class="contact-item">
-          <h2>instagram</h2>
+          <h2>Instagram</h2>
           <p>@PitchPoint_</p>
         </div>
       </div>
     </div>
     <footer class="footer">
       <div class="footer-content">
-        <p class="footer-question">Questions? Contact Us</p>
+        <section data-i18n-block="footer">
+          <p class="footer-question">Questions? Contact Us</p>
+        </section>
 
         <div class="footer-links">
           <div class="footer-column">
@@ -56,5 +69,6 @@
         <p class="footer-copy">© 2026 Pitch Point. All rights reserved..</p>
       </div>
     </footer>
+    <script src="/proyecto.html/assets/js/translation.js"></script>
   </body>
 </html>

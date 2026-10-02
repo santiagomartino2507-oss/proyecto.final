@@ -5,10 +5,14 @@
     "navbarB": "<a href=\"/proyecto.html/pages/info.html\">Info</a><a href=\"/proyecto.html/pages/paginaprincipal.php\">Home</a><a href=\"/proyecto.html/pages/contacts.html\">Contact</a>",
     "logout": "Logout",
     "account": "Account",
-    "footer": "Questions? Contact us.",
+    "footer": "<p class='footer-question'>Questions? Contact us.</p>",
     "la10": "Complex La 10",
     "DonBosco": "Complex Don Bosco",
-    "PFutbol": "Complex Planeta Fútbol"
+    "PFutbol": "Complex Planeta Fútbol",
+    "contact": "<h1>Contact Us</h1><p class='contact-text'>Have any questions? Get in touch with us.</p>",
+    "phone": "Phone",
+    "info": "<h1>About Pitch Point</h1><p>Pitch Point is a platform designed to make booking football fields easier, faster and more convenient.</p>"
+
   },
   "es": {
     "welcome": "<h2>Bienvenido</h2><p>¿Listo para reservar tu cancha?</p><a href='/proyecto.html/pages/bookings.html' class='book-now'>Reservar Ahora</a>",
@@ -16,9 +20,12 @@
     "navbarB": "<a href=\"/proyecto.html/pages/info.html\">Info</a><a href=\"/proyecto.html/pages/paginaprincipal.php\">Inicio</a><a href=\"/proyecto.html/pages/contacts.html\">Contacto</a>",
     "logout": "Cerrar sesión",
     "account": "Cuenta",
-    "footer": "¿Preguntas? Contáctanos.",
+   "footer": "<p class='footer-question'>¿Preguntas? Contáctanos.</p>",
     "la10": "Complejo La 10",
     "DonBosco": "Complejo Don Bosco",
-    "PFutbol": "Complejo Planeta Fútbol"
+    "PFutbol": "Complejo Planeta Fútbol",
+    "contact": "<h1>Contáctanos</h1><p class='contact-text'>¿Tienes alguna pregunta? Ponte en contacto con nosotros.</p>",
+    "phone": "Teléfono",
+    "info": "<h1>Acerca de Pitch Point</h1><p>Pitch Point es una plataforma diseñada para hacer que la reserva de canchas de fútbol sea más fácil, rápida y conveniente.</p>"
   }
 }

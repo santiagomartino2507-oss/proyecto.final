@@ -11,15 +11,26 @@
     <a href="/proyecto.html/pages/paginaprincipal.php" class="back-button"
       >← Back</a
     >
+    <div class="lang-btn-fixed">
+      <button id="lang-toggle" onclick="toggleLanguage()">
+        <img
+          id="lang-flag"
+          src="https://flagcdn.com/24x18/mx.png"
+          alt="Switch to Spanish"
+        />
+      </button>
+    </div>
 
     <div class="info-page">
       <div class="info-box">
-        <h1>About Pitch Point</h1>
+        <section data-i18n-block="info">
+          <h1>About Pitch Point</h1>
 
-        <p>
-          Pitch Point is a platform designed to make booking football fields
-          easier, faster and more convenient.
-        </p>
+          <p>
+            Pitch Point is a platform designed to make booking football fields
+            easier, faster and more convenient.
+          </p>
+        </section>
 
         <div class="info-item">
           <h2>How does it work?</h2>
@@ -51,7 +62,9 @@
     </div>
     <footer class="footer">
       <div class="footer-content">
-        <p class="footer-question">Questions? Contact Us</p>
+        <section data-i18n-block="footer">
+          <p class="footer-question">Questions? Contact Us</p>
+        </section>
 
         <div class="footer-links">
           <div class="footer-column">
@@ -71,5 +84,6 @@
         <p class="footer-copy">© 2026 Pitch Point. All rights reserved..</p>
       </div>
     </footer>
+    <script src="/proyecto.html/assets/js/translation.js"></script>
   </body>
 </html>
