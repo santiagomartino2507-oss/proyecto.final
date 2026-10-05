@@ -1,12 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/proyecto.html/assets/css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Don Bosco | Pitch Point</title>
+    <link
+      rel="stylesheet"
+      href="/proyecto.html/assets/css/style.css?v=la10-layout-20261002"
+    />
+  </head>
+  <body>
+    <main class="la10-page">
+      <div class="la10-topbar">
+        <a class="la10-back" href="/proyecto.html/pages/bookings.html"
+          >← Back to complexes</a
+        >
+        <div class="lang-btn-fixed">
+          <button id="lang-toggle" onclick="toggleLanguage()">
+            <img
+              id="lang-flag"
+              src="https://flagcdn.com/24x18/mx.png"
+              alt="Switch to Spanish"
+            />
+          </button>
+        </div>
+      </div>
+
+      <section class="la10-panel" aria-labelledby="la10-title">
+        <img
+          class="la10-image"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWD1PLsj6EnC3HCxtZcAcu3mOacsxwKFk5zwx4N7HcPWwZWkjTOcpyF26i&amp;s=10"
+          alt="Don Bosco sports complex field"
+        />
+        <div class="la10-details">
+          <p class="la10-eyebrow">Sports complex</p>
+          <h2 id="la10-title">Don Bosco</h2>
+          <p class="la10-welcome">Welcome to Don Bosco!</p>
+          <p class="la10-info">Choose the field that best fits your game.</p>
+        </div>
+      </section>
+
+      <section class="la10-fields" aria-label="Don Bosco fields">
+        <article class="la10-field-card">
+          <h3>Field 1</h3>
+          <ul>
+            <li>5-a-side soccer</li>
+            <li>Up to 10 players</li>
+            <li>Artificial turf</li>
+            <li>$900 per hour</li>
+          </ul>
+          <button
+            type="button"
+            class="boton-reservar"
+            onclick="
+              window.location.href = '/proyecto.html/pages/booking-form.html'
+            "
+          >
+            Book
+          </button>
+        </article>
+        <article class="la10-field-card">
+          <h3>Field 2</h3>
+          <ul>
+            <li>5-a-side soccer</li>
+            <li>Up to 10 players</li>
+            <li>Natural grass</li>
+            <li>$1,100 per hour</li>
+          </ul>
+          <button
+            type="button"
+            class="boton-reservar"
+            onclick="
+              window.location.href = '/proyecto.html/pages/booking-form.html'
+            "
+          >
+            Book
+          </button>
+        </article>
+        <article class="la10-field-card">
+          <h3>Field 3</h3>
+          <ul>
+            <li>7-a-side soccer</li>
+            <li>Up to 14 players</li>
+            <li>Natural grass</li>
+            <li>$1,500 per hour</li>
+          </ul>
+          <button
+            type="button"
+            class="boton-reservar"
+            onclick="
+              window.location.href = '/proyecto.html/pages/booking-form.html'
+            "
+          >
+            Book
+          </button>
+        </article>
+        <article class="la10-field-card">
+          <h3>Field 4</h3>
+          <ul>
+            <li>11-a-side soccer</li>
+            <li>Up to 22 players</li>
+            <li>Artificial turf</li>
+            <li>$2,500 per hour</li>
+          </ul>
+          <button
+            type="button"
+            class="boton-reservar"
+            onclick="
+              window.location.href = '/proyecto.html/pages/booking-form.html'
+            "
+          >
+            Book
+          </button>
+        </article>
+      </section>
+    </main>
+
+    <script src="/proyecto.html/assets/js/translation.js"></script>
+  </body>
 </html>

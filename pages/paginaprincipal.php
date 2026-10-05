@@ -55,22 +55,16 @@
                 <p class="footer-question">Questions? Contact us.</p>
             </section>
 
-            <div class="footer-links">
-                <div class="footer-column">
-                    <a href="/proyecto.html/pages/paginaprincipal.php">Home</a>
-                    <a href="/proyecto.html/pages/bookings.html">Bookings</a>
-                    <a href="/proyecto.html/pages/contacts.html">Contact</a>
-                    <a href="/proyecto.html/pages/info.html">Info</a>
-                </div>
 
-                <div class="footer-column">
-                    <a href="https://www.instagram.com/santiagomartino_/">Instagram</a>
-                    <a href="https://www.tiktok.com">TikTok</a>
-                    <a href="https://www.youtube.com">YouTube</a>
-                </div>
+
+            <div class="footer-column">
+                <a href="https://www.instagram.com/santiagomartino_/">Instagram</a>
+                <a href="https://www.tiktok.com">TikTok</a>
+                <a href="https://www.youtube.com">YouTube</a>
             </div>
+        </div>
 
-            <p class="footer-copy">© 2026 Pitch Point. All rights reserved..</p>
+        <p class="footer-copy">© 2026 Pitch Point. All rights reserved..</p>
         </div>
     </footer>
     <script src="/proyecto.html/assets/js/translation.js"></script>

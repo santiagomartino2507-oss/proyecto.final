@@ -10,17 +10,22 @@
 
 <body>
 
-    <a href="/proyecto.html/pages/paginaprincipal.php" class="back-button">← Back</a>
+    <a href="/proyecto.html/pages/paginaprincipal.php" class="back-button" data-i18n="back-btn">← Back</a>
+
+
+    <button id="lang-toggle" class="lang-btn-fixed" onclick="toggleLanguage()">
+        <img id="lang-flag" src="https://flagcdn.com/24x18/mx.png" alt="Switch to Spanish">
+    </button>
 
     <div class="profile">
 
-        <h1>Welcome Back</h1>
+        <h1 data-i18n="login-title">Welcome Back</h1>
         <form id="login-form" action="/proyecto.html/php/login.php" method="post">
 
-            <label for="username">Username</label>
+            <label for="username" data-i18n="login-username">Username</label>
             <input type="text" id="username" name="username" placeholder="Enter your username">
 
-            <label for="password">Password</label>
+            <label for="password" data-i18n="login-password">Password</label>
             <input type="password" id="password" name="password" placeholder="Enter your password">
 
             <?php
@@ -28,15 +33,18 @@
                 echo "<label class='lbl lbl-error' >" . $_GET['error'] . "</label>";
             ?>
 
-            <button type="submit">Sign In</button>
+            <button type="submit" data-i18n="login-btn">Sign In</button>
 
         </form>
         <span>
-            Don't have an account?
-            <a href="/proyecto.html/index.php?view=register">Register</a>
+            <span data-i18n="login-register-text">Don't have an account?</span>
+            <a href="/proyecto.html/index.php?view=register" data-i18n="login-register-link">Register</a>
         </span>
     </div>
 
+  
+    <script src="/proyecto.html/assets/js/script.js"></script>
+    <script src="/proyecto.html/assets/js/translation.js"></script>
 </body>
 
 </html>

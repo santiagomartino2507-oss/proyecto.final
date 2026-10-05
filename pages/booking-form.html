@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Field | Pitch Point</title>
+    <link rel="stylesheet" href="/proyecto.html/assets/css/style.css" />
+  </head>
+  <body>
+    <main class="booking-page">
+      <a class="booking-back" href="javascript:history.back()">← Back</a>
+      <h1>Book a Field</h1>
+
+      <form
+        class="booking-form"
+        id="booking-form"
+        onsubmit="handleBooking(event)"
+      >
+        <label>
+          Your name
+          <input type="text" id="name" required />
+          <span class="input-error" id="name-error"
+            >Please enter your full name (first and last name).</span
+          >
+        </label>
+        <label>
+          Date
+          <input type="date" id="date" required />
+        </label>
+        <button type="submit" class="boton-reservar">Confirm Booking</button>
+      </form>
+
+      <div class="booking-success" id="booking-success">
+        <p>✅ Booking confirmed!</p>
+        <p id="success-name"></p>
+        <p id="success-date"></p>
+      </div>
+    </main>
+
+    <script src="/proyecto.html/assets/js/coso.js"></script>
+  </body>
+</html>

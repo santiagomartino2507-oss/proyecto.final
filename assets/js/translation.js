@@ -3,7 +3,7 @@ let currentLang = localStorage.getItem("preferredLang") || "en";
 let translations = {};
 
 // 2. Fetch the external JSON file when the page loads
-fetch("../assets/json/translation.json")
+fetch("/proyecto.html/assets/json/translation.json")
   .then((response) => {
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);

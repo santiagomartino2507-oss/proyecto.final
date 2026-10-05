@@ -159,17 +159,19 @@ section[data-i18n-block="navbarB"] {
 }
 
 #lang-toggle {
-    background-color: rgb(0, 71, 4); 
-    color: hsl(120, 23%, 97%);
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 22px;
-    cursor: pointer;
-    transition: background-color 0.2s, transform 0.2s;
-    width: fit-content;  
-    margin-top: 0;       
-    display: inline-block;
+  background-color: rgb(0, 71, 4);
+  color: hsl(120, 23%, 97%);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 22px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    transform 0.2s;
+  width: fit-content;
+  margin-top: 0;
+  display: inline-block;
 }
 #lang-toggle:hover {
   background-color: #006d04;
@@ -241,7 +243,6 @@ section[data-i18n-block="navbarB"] {
   padding: 30px;
 }
 
-
 .card {
   width: 270px;
   min-height: 380px;
@@ -279,8 +280,7 @@ section[data-i18n-block="navbarB"] {
   margin-top: 15px;
 }
 
-
-.card p, 
+.card p,
 .card a {
   color: white;
   text-decoration: none;
@@ -776,7 +776,7 @@ h2 {
 
 p {
   color: #f6fbf6;
-  font-size: 38px; 
+  font-size: 38px;
   text-align: center;
   margin: 8px 0;
 }
@@ -853,7 +853,7 @@ p {
   border-radius: 8px;
   overflow: hidden;
 }
-.tabla-precios th, 
+.tabla-precios th,
 .tabla-precios td {
   padding: 12px;
   text-align: center;
@@ -864,7 +864,8 @@ p {
   color: white;
 }
 /* HORARIOS Y UBICACIÓN */
-.schedule, .ubication {
+.schedule,
+.ubication {
   text-align: center;
   max-width: 800px;
   margin: 40px auto;
@@ -955,7 +956,7 @@ iframe {
 /* Ajustes de contenido y canchas de La 10 */
 .la10-topbar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin-bottom: 18px;
 }
 .la10-topbar .la10-back {
@@ -1031,10 +1032,6 @@ iframe {
   margin-top: 16px;
   font-size: 15px;
 }
-.la10-sample-note {
-  margin: 14px 0 0;
-  font-size: 13px;
-}
 @media (max-width: 900px) {
   .la10-fields {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1050,4 +1047,90 @@ iframe {
   .la10-image {
     height: 210px;
   }
+}
+/* BOOKING FORM */
+.booking-page {
+  width: min(100% - 40px, 480px);
+  margin: 60px auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking-page h1 {
+  margin-bottom: 28px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.booking-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 36px;
+  border-radius: 16px;
+}
+
+.booking-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 15px;
+  color: #a9e6ad;
+}
+
+.booking-form input {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #1a1a1a;
+  color: white;
+  outline: none;
+}
+
+.booking-form input:focus {
+  outline: 2px solid #006d04;
+}
+
+.booking-back {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: white;
+  text-decoration: none;
+  background: #006d04;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.booking-success {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 40px 36px;
+  border-radius: 16px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+}
+
+.booking-success p:first-child {
+  font-size: 22px;
+  color: #a9e6ad;
+  font-weight: bold;
+}
+.input-error {
+  display: none;
+  color: #ff6b6b;
+  font-size: 13px;
+}
+
+.input-error.visible {
+  display: block;
 }
