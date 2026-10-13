@@ -42,7 +42,7 @@
         </span>
     </div>
 
-  
+
     <script src="/proyecto.html/assets/js/script.js"></script>
     <script src="/proyecto.html/assets/js/translation.js"></script>
 </body>
