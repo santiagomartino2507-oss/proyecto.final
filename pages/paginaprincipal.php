@@ -1,14 +1,14 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html> <!-- Declare document type as HTML5 standard -->
+<html lang="en"> <!-- Set the language of the document to English -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pitch Point</title>
-    <link rel="stylesheet" href="/proyecto.html/assets/css/style.css">
+<head> <!-- Document metadata, configurations, and external resources -->
+    <meta charset="UTF-8"> <!-- Character encoding: prevents broken accents and symbols -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport setup: enables responsive mobile scaling -->
+    <title>Pitch Point</title> <!-- Set the title of the webpage -->
+    <link rel="stylesheet" href="/proyecto.html/assets/css/style.css"> <!-- Link to external CSS stylesheet for styling -->
 </head>
 
-<body>
+<body> <!-- Visible content and UI elements displayed to the user -->
     <header>
         <div class="logo">
             <img src="https://static.vecteezy.com/system/resources/thumbnails/049/883/193/small_2x/a-white-and-black-soccer-ball-isolated-on-transparent-background-png.png"

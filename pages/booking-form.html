@@ -7,9 +7,24 @@
     <link rel="stylesheet" href="/proyecto.html/assets/css/style.css" />
   </head>
   <body>
+    <div class="lang-btn-fixed">
+      <button id="lang-toggle" onclick="toggleLanguage()">
+        <img
+          id="lang-flag"
+          src="https://flagcdn.com/24x18/mx.png"
+          alt="Switch to Spanish"
+        />
+      </button>
+    </div>
+
     <main class="booking-page">
-      <a class="booking-back" href="javascript:history.back()">← Back</a>
-      <h1>Book a Field</h1>
+      <a
+        class="booking-back"
+        href="javascript:history.back()"
+        data-i18n="back-btn"
+        >← Back</a
+      >
+      <h1 data-i18n="booking-title">Book a Field</h1>
 
       <form
         class="booking-form"
@@ -17,26 +32,32 @@
         onsubmit="handleBooking(event)"
       >
         <label>
-          Your name
+          <span data-i18n="booking-name">Your name</span>
           <input type="text" id="name" required />
-          <span class="input-error" id="name-error"
+          <span
+            class="input-error"
+            id="name-error"
+            data-i18n="booking-name-error"
             >Please enter your full name (first and last name).</span
           >
         </label>
         <label>
-          Date
+          <span data-i18n="booking-date">Date</span>
           <input type="date" id="date" required />
         </label>
-        <button type="submit" class="boton-reservar">Confirm Booking</button>
+        <button type="submit" class="boton-reservar" data-i18n="booking-btn">
+          Confirm Booking
+        </button>
       </form>
 
       <div class="booking-success" id="booking-success">
-        <p>✅ Booking confirmed!</p>
+        <p data-i18n="booking-success-title">✅ Booking confirmed!</p>
         <p id="success-name"></p>
         <p id="success-date"></p>
       </div>
     </main>
 
     <script src="/proyecto.html/assets/js/script.js"></script>
+    <script src="/proyecto.html/assets/js/translation.js"></script>
   </body>
 </html>
