@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html> <!-- Declare document type as HTML5 standard -->
+<!DOCTYPE html> <!-- Declare document type as HTML5 standard -->
 <html lang="en"> <!-- Set the language of the document to English -->
 
 <head> <!-- Document metadata, configurations, and external resources -->
@@ -15,6 +15,11 @@
                 alt="Logo">
             <h1 class="title-logo">PITCH <br> POINT</h1>
         </div>
+        <!-- Invisible checkbox that controls the mobile menu open/close state -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <!-- Clickable hamburger icon (☰) shown only on mobile -->
+        <label for="nav-toggle" class="hamburger">&#9776;</label>
+
         <nav>
             <section data-i18n-block="navbar">
                 <a href="/proyecto.html/pages/info.html">Info</a>

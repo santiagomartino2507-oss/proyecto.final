@@ -39,7 +39,12 @@
     "booking-name-error": "Please enter your full name (first and last name).",
     "booking-date": "Date",
     "booking-btn": "Confirm Booking",
-    "booking-success-title": "✅ Booking confirmed!"
+    "booking-success-title": "✅ Booking confirmed!",
+    "err-fill-both": "Please fill in both username and password.",
+    "err-length": "Username and password must be between 5 and 20 characters.",
+    "err-letter-number": "Username must contain at least one letter and one number.",
+    "err-special-char": "Password must contain a lowercase, uppercase, number, and special character.",
+    "err-invalid-login": "Invalid username or password."
   },
   "es": {
     "welcome": "<h2>Bienvenido</h2><p>¿Listo para reservar tu cancha?</p><a href='/proyecto.html/pages/bookings.html' class='book-now'>Reservar Ahora</a>",
@@ -81,6 +86,11 @@
     "booking-name-error": "Por favor ingresa tu nombre completo (nombre y apellido).",
     "booking-date": "Fecha",
     "booking-btn": "Confirmar Reserva",
-    "booking-success-title": "✅ ¡Reserva confirmada!"
+    "booking-success-title": "✅ ¡Reserva confirmada!",
+    "err-fill-both": "Por favor completa el usuario y la contraseña.",
+    "err-length": "El usuario y la contraseña deben tener entre 5 y 20 caracteres.",
+    "err-letter-number": "El usuario debe contener al menos una letra y un número.",
+    "err-special-char": "La contraseña debe contener minúscula, mayúscula, número y carácter especial.",
+    "err-invalid-login": "Usuario o contraseña incorrectos."
   }
 }

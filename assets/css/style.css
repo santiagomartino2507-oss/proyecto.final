@@ -1134,3 +1134,62 @@ iframe {
 .input-error.visible {
   display: block;
 }
+
+/* -------------------------------------------------------- */
+/* HAMBURGER MENU                                           */
+/* -------------------------------------------------------- */
+
+/* Hide the actual checkbox (it's only used as a state toggle) */
+.nav-toggle {
+  display: none;
+}
+
+/* Hide the hamburger icon on desktop */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  user-select: none;
+}
+
+/* Show hamburger icon on mobile */
+@media (max-width: 768px) {
+  /* Show the hamburger ☰ icon */
+  .hamburger {
+    display: inline-block;
+  }
+
+  /* Hide nav links by default on mobile */
+  header nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  /* When checkbox is checked, show the nav */
+  .nav-toggle:checked ~ nav {
+    display: flex;
+  }
+
+  /* Make header a column so nav opens below the logo/hamburger */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  /* Put logo and hamburger icon on the same row */
+  header .logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -18,19 +18,12 @@
     </div>
 
     <main class="booking-page">
-      <a
-        class="booking-back"
-        href="javascript:history.back()"
-        data-i18n="back-btn"
+      <a class="booking-back" id="booking-back" href="#" data-i18n="back-btn"
         >← Back</a
       >
       <h1 data-i18n="booking-title">Book a Field</h1>
 
-      <form
-        class="booking-form"
-        id="booking-form"
-        onsubmit="handleBooking(event)"
-      >
+      <form class="booking-form" id="booking-form">
         <label>
           <span data-i18n="booking-name">Your name</span>
           <input type="text" id="name" required />

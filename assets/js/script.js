@@ -1,13 +1,32 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("hola, estoy cargado");
 
-  const feedback = document.getElementById("feedback");
+  function t(key, fallback) {
+    const lang = localStorage.getItem("preferredLang") || "en";
+    if (
+      typeof translations !== "undefined" &&
+      translations[lang] &&
+      translations[lang][key]
+    ) {
+      return translations[lang][key];
+    }
+    return fallback;
+  }
+
+  const feedback =
+    document.getElementById("feedback") || document.querySelector(".lbl-error");
   const params = new URLSearchParams(window.location.search);
 
   if (feedback) {
     if (params.has("error")) {
-      feedback.textContent = params.get("error");
-      feedback.className = "error";
+      const errorMsg = params.get("error");
+      if (errorMsg === "Invalid username or password") {
+        feedback.textContent = t("err-invalid-login", errorMsg);
+        feedback.setAttribute("data-i18n", "err-invalid-login");
+      } else {
+        feedback.textContent = errorMsg;
+      }
+      feedback.className = "error lbl-error";
     } else if (params.has("success")) {
       feedback.textContent = params.get("success");
       feedback.className = "success";
@@ -15,7 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Login Form Validation
-  const loginForm = document.getElementById("loginForm");
+  const loginForm =
+    document.getElementById("loginForm") ||
+    document.getElementById("login-form");
   if (loginForm) {
     loginForm.addEventListener("submit", function (event) {
       const username = document.getElementById("username").value.trim();
@@ -24,8 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!username || !password) {
         event.preventDefault();
         if (feedback) {
-          feedback.textContent = "Please fill in both username and password.";
-          feedback.className = "error";
+          feedback.textContent = t(
+            "err-fill-both",
+            "Please fill in both username and password.",
+          );
+          feedback.setAttribute("data-i18n", "err-fill-both");
+          feedback.className = "error lbl-error";
         }
       }
     });
@@ -46,8 +71,11 @@ document.addEventListener("DOMContentLoaded", () => {
       ) {
         event.preventDefault();
         if (feedback) {
-          feedback.textContent =
-            "Username and password must be between 5 and 20 characters.";
+          feedback.textContent = t(
+            "err-length",
+            "Username and password must be between 5 and 20 characters.",
+          );
+          feedback.setAttribute("data-i18n", "err-length");
           feedback.className = "error";
         }
         return;
@@ -58,8 +86,11 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!hasLetter || !hasNumber) {
         event.preventDefault();
         if (feedback) {
-          feedback.textContent =
-            "Username must contain at least one letter and one number.";
+          feedback.textContent = t(
+            "err-letter-number",
+            "Username must contain at least one letter and one number.",
+          );
+          feedback.setAttribute("data-i18n", "err-letter-number");
           feedback.className = "error";
         }
         return;
@@ -74,8 +105,11 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!hasLowercase || !hasUppercase || !hasDigit || !hasSpecialChar) {
         event.preventDefault();
         if (feedback) {
-          feedback.textContent =
-            "Password must contain a lowercase, uppercase, number, and special character.";
+          feedback.textContent = t(
+            "err-special-char",
+            "Password must contain a lowercase, uppercase, number, and special character.",
+          );
+          feedback.setAttribute("data-i18n", "err-special-char");
           feedback.className = "error";
         }
         return;
@@ -83,7 +117,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Booking Form
+  // Booking Form & Date Restriction
+  const dateInput = document.getElementById("date"); // Find id="date" in the booking form
+  if (dateInput) {
+    // Checks if date input exists on current page
+    const today = new Date().toISOString().split("T")[0]; // Gets today's date
+    dateInput.min = today; // Sets the minimum date to today
+  }
+
+  const bookingBack = document.getElementById("booking-back");
+  if (bookingBack) {
+    bookingBack.addEventListener("click", (e) => {
+      e.preventDefault();
+      history.back();
+    });
+  }
+
   const bookingForm = document.getElementById("booking-form");
   if (bookingForm) {
     bookingForm.addEventListener("submit", function (e) {
@@ -102,6 +151,12 @@ document.addEventListener("DOMContentLoaded", () => {
       nameError.classList.remove("visible");
 
       const date = document.getElementById("date").value;
+      const today = new Date().toISOString().split("T")[0];
+      if (date < today) {
+        alert("Please select a date from today onwards.");
+        return;
+      }
+
       document.getElementById("success-name").textContent =
         "Name: " + nameInput.value;
       document.getElementById("success-date").textContent = "Date: " + date;
