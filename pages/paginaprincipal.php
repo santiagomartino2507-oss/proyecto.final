@@ -1,23 +1,25 @@
-<!DOCTYPE html> <!-- Declare document type as HTML5 standard -->
+﻿<!DOCTYPE html> <!-- Declare document type as HTML5 standard -->
 <html lang="en"> <!-- Set the language of the document to English -->
 
 <head> <!-- Document metadata, configurations, and external resources -->
     <meta charset="UTF-8"> <!-- Character encoding: prevents broken accents and symbols -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport setup: enables responsive mobile scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Viewport setup: enables responsive mobile scaling -->
     <title>Pitch Point</title> <!-- Set the title of the webpage -->
-    <link rel="stylesheet" href="/proyecto.html/assets/css/style.css"> <!-- Link to external CSS stylesheet for styling -->
+    <link rel="stylesheet" href="/proyecto.html/assets/css/style.css">
+    <!-- Link to external CSS stylesheet for styling -->
 </head>
 
 <body> <!-- Visible content and UI elements displayed to the user -->
-    <header>
-        <div class="logo">
+    <header>  <!-- Header section containing navigation and branding -->
+        <div class="logo"> <!-- Container -->
             <img src="https://static.vecteezy.com/system/resources/thumbnails/049/883/193/small_2x/a-white-and-black-soccer-ball-isolated-on-transparent-background-png.png"
-                alt="Logo">
+                alt="Logo"> <!-- Alternative text for the image -->
             <h1 class="title-logo">PITCH <br> POINT</h1>
         </div>
-        <!-- Invisible checkbox that controls the mobile menu open/close state -->
+        ></div>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <!-- Clickable hamburger icon (☰) shown only on mobile -->
+        ></div>
         <label for="nav-toggle" class="hamburger">&#9776;</label>
 
         <nav>
