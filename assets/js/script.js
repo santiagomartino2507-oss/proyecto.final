@@ -1,6 +1,6 @@
 // Wait for the DOM before finding forms and attaching event listeners.
 document.addEventListener("DOMContentLoaded", () => { // Register an arrow-function listener that runs after the HTML has been parsed.
-
+  console.log("hola, estoy cargado"); // Log to the console to confirm that the script is loaded
   // Look up a translation; use the fallback text if fetch has not finished yet.
   function t(key, fallback) { // Declare t with key and fallback parameters to return a translation or its fallback.
     const lang = localStorage.getItem("preferredLang") || "en"; // Read the saved language from localStorage; || uses en when there is no truthy saved value.
