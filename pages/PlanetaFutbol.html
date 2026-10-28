@@ -1,47 +1,50 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Planeta Futbol | Pitch Point</title>
+<!doctype html> <!-- HTML5 standards mode. -->
+<html lang="en"> <!-- Initial language: English. -->
+  <head> <!-- Page settings and resources. -->
+    <meta charset="UTF-8" /> <!-- Text encoding for accents and symbols. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Device width; normal initial zoom. -->
+    <title>Planeta Futbol | Pitch Point</title> <!-- Browser tab title. -->
     <link
       rel="stylesheet"
       href="/proyecto.html/assets/css/style.css?v=la10-layout-20261002"
-    />
-  </head>
-  <body>
+    /> <!-- Load the shared CSS. -->
+  </head> <!-- End page settings. -->
+  <body> <!-- Visible page content. -->
+
     <main class="la10-page">
-      <div class="la10-topbar">
+      <div class="la10-topbar"> <!-- Group the back link and language button. -->
         <a
           class="la10-back"
           href="/proyecto.html/pages/bookings.html"
           data-i18n="back-btn"
           >← Back</a
-        >
-        <div class="lang-btn-fixed">
-          <button id="lang-toggle" onclick="toggleLanguage()">
+        > <!-- Return to the complex catalog. Translated label. -->
+        <div class="lang-btn-fixed"> <!-- Group the language button. -->
+          <button id="lang-toggle" onclick="toggleLanguage()"> <!-- Click calls the language-switch function. -->
             <img
               id="lang-flag"
               src="https://flagcdn.com/24x18/mx.png"
               alt="Switch to Spanish"
-            />
-          </button>
-        </div>
-      </div>
+            /> <!-- Flag indicates the next language. -->
+          </button> <!-- End the language button. -->
+        </div> <!-- End the language button group. -->
+      </div> <!-- End the top controls. -->
+
 
       <section class="la10-panel" aria-labelledby="la10-title">
         <img
           class="la10-image"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEV0hj2ZRss7JvbgSkoxPwEerhbidHgVgCgeP9MeoK8vdCH4n0qUG9bK80&s=10"
           alt="Planeta Futbol sports complex field"
-        />
-        <div class="la10-details" data-i18n-block="PF">
-          <p class="la10-eyebrow">Sports complex</p>
-          <h2 id="la10-title">Planeta Futbol</h2>
-          <p class="la10-welcome">Welcome to Planeta Futbol!</p>
-          <p class="la10-info">Choose the field that best fits your game.</p>
-        </div>
+        /> <!-- Complex image; alt describes it. -->
+        <div class="la10-details" data-i18n-block="PF"> <!-- Translate this content block. -->
+          <p class="la10-eyebrow">Sports complex</p> <!-- Complex label. -->
+          <h2 id="la10-title">Planeta Futbol</h2> <!-- Second-level heading. -->
+          <p class="la10-welcome">Welcome to Planeta Futbol!</p> <!-- Welcome message. -->
+          <p class="la10-info">Choose the field that best fits your game.</p> <!-- Complex description. -->
+        </div> <!-- End the translated content block. -->
       </section>
+
 
       <section
         class="la10-fields"
@@ -123,6 +126,6 @@
       </section>
     </main>
 
-    <script src="/proyecto.html/assets/js/translation.js"></script>
-  </body>
-</html>
+    <script src="/proyecto.html/assets/js/translation.js"></script> <!-- Load the language-switching code. -->
+  </body> <!-- End visible page content. -->
+</html> <!-- End the HTML document. -->

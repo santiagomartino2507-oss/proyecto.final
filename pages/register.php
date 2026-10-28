@@ -1,39 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><!-- Declare HTML5 standards mode; this is not a container tag. -->
+<!-- Open the html element for root document. lang=en declares the initial document language; the script can update it. --><html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register | Pitch Point</title>
-    <link rel="stylesheet" href="/proyecto.html/assets/css/style.css">
-</head>
+<!-- Open the head element for metadata section. --><head>
+    <!-- Insert the meta element for metadata element; it is a void element and needs no closing tag. charset=UTF-8 declares how to decode accented letters and symbols in the document. --><meta charset="UTF-8">
+    <!-- Insert the meta element for metadata element; it is a void element and needs no closing tag. name=viewport identifies the mobile viewport configuration. width=device-width uses the device width and initial-scale=1.0 sets the normal initial scale. --><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open the title element for browser tab title. --><title>Register | Pitch Point</title><!-- Close the browser tab title opened on line 7; preserve nesting order. -->
+    <!-- Insert the link element for resource link; it is a void element and needs no closing tag. rel=stylesheet identifies the linked resource as a stylesheet. href points to style.css; a leading slash resolves from the site root. --><link rel="stylesheet" href="/proyecto.html/assets/css/style.css">
+</head><!-- Close the metadata section opened on line 4; preserve nesting order. -->
 
-<body>
-    <a href="/proyecto.html/pages/paginaprincipal.php" class="back-button" data-i18n="back-btn">← Back</a>
+<!-- Open the body element for visible page content. --><body>
+    <!-- Open the a element for link. href points to paginaprincipal.php; a leading slash resolves from the site root. class=back-button applies the named CSS classes; spaces separate multiple classes. data-i18n=back-btn selects the JSON key used to replace plain text through textContent. --><a href="/proyecto.html/pages/paginaprincipal.php" class="back-button" data-i18n="back-btn">← Back<!-- Literal link text: "← Back"; it does not execute logic. --></a><!-- Close the link opened on line 12; preserve nesting order. -->
 
 
-    <button id="lang-toggle" class="lang-btn-fixed" onclick="toggleLanguage()">
-        <img id="lang-flag" src="https://flagcdn.com/24x18/mx.png" alt="Switch to Spanish">
-    </button>
+    <!-- Open the button element for button. id=lang-toggle uniquely identifies this page element for CSS, JavaScript or accessibility references. class=lang-btn-fixed applies the named CSS classes; spaces separate multiple classes. onclick calls toggleLanguage on click to switch the language and update the content. --><button id="lang-toggle" class="lang-btn-fixed" onclick="toggleLanguage()">
+        <!-- Insert the img element for image; it is a void element and needs no closing tag. id=lang-flag uniquely identifies this page element for CSS, JavaScript or accessibility references. src loads an external resource requiring Internet. alt describes the image as "Switch to Spanish" for unavailable images and screen readers. --><img id="lang-flag" src="https://flagcdn.com/24x18/mx.png" alt="Switch to Spanish">
+    </button><!-- Close the button opened on line 15; preserve nesting order. -->
 
-    <div class="profile">
-        <h1 data-i18n="register-title">Create Account</h1>
-        <form id="registerForm" action="/proyecto.html/php/register.php" method="post">
-            <label for="username" data-i18n="register-username">Username</label>
-            <input type="text" id="username" name="username" placeholder="Enter your username" />
-            <label for="password" data-i18n="register-password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" />
-            <label id="feedback"></label>
-            <button type="submit" data-i18n="register-btn">Register</button>
-        </form>
-        <span>
-            <span data-i18n="register-login-text">Already have an account?</span>
-            <a href="/proyecto.html/index.php?view=login" data-i18n="register-login-link">Login</a>
-        </span>
-    </div>
+    <!-- Open the div element for generic container. class=profile applies the named CSS classes; spaces separate multiple classes. --><div class="profile">
+        <!-- Open the h1 element for level-one heading. data-i18n=register-title selects the JSON key used to replace plain text through textContent. --><h1 data-i18n="register-title">Create Account<!-- Literal level-one heading text: "Create Account"; it does not execute logic. --></h1><!-- Close the level-one heading opened on line 20; preserve nesting order. -->
+        <!-- action receives POST data; each name becomes a key in PHP's $_POST array. -->
+        <!-- Open the form element for form. id=registerForm uniquely identifies this page element for CSS, JavaScript or accessibility references. action submits the form to the register.php controller, separate from its view. method=post sends values in the request body; it does not encrypt transport by itself. --><form id="registerForm" action="/proyecto.html/php/register.php" method="post">
+            <!-- Open the label element for form label. for=username associates the label with that input id; clicking the label focuses or toggles it. data-i18n=register-username selects the JSON key used to replace plain text through textContent. --><label for="username" data-i18n="register-username">Username<!-- Literal form label text: "Username"; it does not execute logic. --></label><!-- Close the form label opened on line 23; preserve nesting order. -->
+            <!-- Insert the input element for input; it is a void element and needs no closing tag. type=text selects plain text. id=username uniquely identifies this page element for CSS, JavaScript or accessibility references. name=username names the submitted form value; PHP receives that key in $_POST. placeholder shows "Enter your username" when the field is empty; it does not replace its label. autocomplete=username tells the browser whether the value is a username, current password or new password. required is a boolean attribute that requires a value for normal submission; data sent to a server also needs server validation. --><input type="text" id="username" name="username" placeholder="Enter your username" autocomplete="username" required />
+            <!-- Open the label element for form label. for=password associates the label with that input id; clicking the label focuses or toggles it. data-i18n=register-password selects the JSON key used to replace plain text through textContent. --><label for="password" data-i18n="register-password">Password<!-- Literal form label text: "Password"; it does not execute logic. --></label><!-- Close the form label opened on line 25; preserve nesting order. -->
+            <!-- Insert the input element for input; it is a void element and needs no closing tag. type=password selects visually masked text; this attribute does not encrypt it. id=password uniquely identifies this page element for CSS, JavaScript or accessibility references. name=password names the submitted form value; PHP receives that key in $_POST. placeholder shows "Enter your password" when the field is empty; it does not replace its label. autocomplete=new-password tells the browser whether the value is a username, current password or new password. required is a boolean attribute that requires a value for normal submission; data sent to a server also needs server validation. --><input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="new-password" required />
+            <!-- Server or validation feedback; this is a message, not an input label. -->
+            <!-- Open the div element for generic container. id=feedback uniquely identifies this page element for CSS, JavaScript or accessibility references. role=status identifies informational updates for accessibility tools. aria-live=polite requests announcements of changes without interrupting current speech. --><div id="feedback" role="status" aria-live="polite"></div><!-- Close the generic container opened on line 28; preserve nesting order. -->
+            <!-- Open the button element for button. type=submit selects a button that submits its form. data-i18n=register-btn selects the JSON key used to replace plain text through textContent. --><button type="submit" data-i18n="register-btn">Register<!-- Literal button text: "Register"; it does not execute logic. --></button><!-- Close the button opened on line 29; preserve nesting order. -->
+        </form><!-- Close the form opened on line 22; preserve nesting order. -->
+        <!-- Open the span element for inline container. --><span>
+            <!-- Open the span element for inline container. data-i18n=register-login-text selects the JSON key used to replace plain text through textContent. --><span data-i18n="register-login-text">Already have an account?<!-- Literal inline container text: "Already have an account?"; it does not execute logic. --></span><!-- Close the inline container opened on line 32; preserve nesting order. -->
+            <!-- Open the a element for link. href points to index.php?view=login; a leading slash resolves from the site root. data-i18n=register-login-link selects the JSON key used to replace plain text through textContent. --><a href="/proyecto.html/index.php?view=login" data-i18n="register-login-link">Login<!-- Literal link text: "Login"; it does not execute logic. --></a><!-- Close the link opened on line 33; preserve nesting order. -->
+        </span><!-- Close the inline container opened on line 31; preserve nesting order. -->
+    </div><!-- Close the generic container opened on line 19; preserve nesting order. -->
 
-    <script src="/proyecto.html/assets/js/script.js"></script>
-    <script src="/proyecto.html/assets/js/translation.js"></script>
-</body>
+    <!-- Open the script element for JavaScript loader. src loads the local resource /proyecto.html/assets/js/script.js. --><script src="/proyecto.html/assets/js/script.js"></script><!-- Close the JavaScript loader opened on line 37; preserve nesting order. -->
+    <!-- Open the script element for JavaScript loader. src loads the local resource /proyecto.html/assets/js/translation.js. --><script src="/proyecto.html/assets/js/translation.js"></script><!-- Close the JavaScript loader opened on line 38; preserve nesting order. -->
+</body><!-- Close the visible page content opened on line 11; preserve nesting order. -->
 
-</html>
+</html><!-- Close the root document opened on line 2; preserve nesting order. -->

@@ -1,4 +1,8 @@
-/* COMIENZO DE LA PAGINA*/
+
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 body {
   background-image: url("/proyecto.html/img/fondodelapagina.png");
   background-size: cover;
@@ -18,11 +23,12 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 header {
   position: relative;
   z-index: 10;
   display: grid;
-  grid-template-columns: 1fr auto 1fr; /* equal side columns force nav to stay centered */
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding: 0 30px;
   height: 90px;
@@ -76,25 +82,33 @@ header {
   background-color: #00a52b;
 }
 .user-actions {
-  /* container for username and logout button */
-  display: flex; /* places username and button side by side */
-  align-items: center; /* vertically centers them */
-  justify-content: flex-end; /* pushes them to the right of the header */
-  gap: 10px; /* space between username and button */
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+h1 {
+  font-size: 38px;
+  color: #ffffff;
+  margin-bottom: 15px;
 }
 h2 {
   color: #f3f9f3;
   font-size: 58px;
   font-weight: bold;
-  margin-top: 50px;
+  margin: 35px 0 20px 0;
   text-align: center;
 }
+
 p {
   color: #f6fbf6;
   font-size: 38px;
   text-align: center;
-  margin-top: 50px;
+  margin: 8px 0;
 }
+
 .inicio {
   position: relative;
   z-index: 1;
@@ -124,13 +138,14 @@ p {
   background-color: #00a52b;
   transform: scale(1.05);
 }
+
 nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: fit-content;
-  background-color: rgba(0, 0, 0, 0.45); /* semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.45);
   gap: 15px;
   padding: 10px 10px;
   margin: 0 auto;
@@ -183,6 +198,7 @@ section[data-i18n-block="navbarB"] {
   border-radius: 3px;
   vertical-align: middle;
 }
+
 .footer {
   background-color: #181818;
   color: #737373;
@@ -228,13 +244,13 @@ section[data-i18n-block="navbarB"] {
   margin-top: 20px;
   font-size: 13px;
 }
-/*--------------------------------------------------------*/
-/* FINAL DE LA PAGINA PRINCIPAL*/
-/* COMIENZO DE LA PAGINA DE RESERVAS*/
-/*--------------------------------------------------------*/
-/*--------------------------------------------------------*/
-/* PAGINA DE RESERVAS Y CANCHAS */
-/*--------------------------------------------------------*/
+
+
+
+
+
+
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -272,6 +288,7 @@ section[data-i18n-block="navbarB"] {
   font-weight: bold;
 }
 
+
 .card img {
   width: 100%;
   height: 170px;
@@ -291,9 +308,9 @@ section[data-i18n-block="navbarB"] {
   text-align: center;
   margin-top: auto;
 }
-/*--------------------------------------------------------*/
-/*COMIENZO DE PROFILE*/
-/*--------------------------------------------------------*/
+
+
+
 .profile {
   width: 400px;
   margin: 100px auto;
@@ -307,6 +324,7 @@ section[data-i18n-block="navbarB"] {
   color: white;
   margin-bottom: 20px;
 }
+
 
 .profile form {
   display: flex;
@@ -372,9 +390,9 @@ section[data-i18n-block="navbarB"] {
   text-decoration: none;
   color: white;
 }
-/*-------------------------------------------*/
-/*COMIENZO DE LA PAGINA DE CONTACTOS*/
-/*-------------------------------------------*/
+
+
+
 .contact-page {
   min-height: calc(100vh - 90px);
 
@@ -423,9 +441,9 @@ section[data-i18n-block="navbarB"] {
 .contact-item p {
   font-size: 18px;
 }
-/*----------------------------------------------*/
-/*COMIENZO DE LA PAGINA DE INFO*/
-/*----------------------------------------------*/
+
+
+
 .info-page {
   min-height: calc(100vh - 90px);
 
@@ -452,7 +470,7 @@ section[data-i18n-block="navbarB"] {
   margin-bottom: 20px;
 }
 
-.info-box > p {
+.info-box > section > p {
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 25px;
@@ -476,6 +494,7 @@ section[data-i18n-block="navbarB"] {
   font-size: 17px;
   line-height: 1.4;
 }
+
 
 body {
   font-family: Arial, sans-serif;
@@ -514,6 +533,7 @@ button:hover {
   background-color: #0056b3;
 }
 
+
 .error {
   color: #ff3b30 !important;
   font-weight: bold;
@@ -540,7 +560,6 @@ button:hover {
 }
 
 #feedback {
-  color: #800000 !important;
   display: block;
   min-height: 20px;
 }
@@ -562,8 +581,10 @@ button:hover {
   display: block;
 }
 
+
 @media (max-width: 900px) {
   header {
+    display: flex;
     height: auto;
     min-height: 90px;
     flex-wrap: wrap;
@@ -613,6 +634,7 @@ button:hover {
     margin: 0 auto;
   }
 }
+
 
 @media (max-width: 600px) {
   header {
@@ -756,31 +778,13 @@ button:hover {
   }
 }
 
-/* SECCIÓN BIENVENIDA */
+
+
 .welcomeSection {
   text-align: center;
   margin-bottom: 40px;
 }
-h1 {
-  font-size: 38px;
-  color: #ffffff;
-  margin-bottom: 15px;
-}
-h2 {
-  color: #f3f9f3;
-  font-size: 58px;
-  font-weight: bold;
-  margin: 35px 0 20px 0;
-  text-align: center;
-}
 
-p {
-  color: #f6fbf6;
-  font-size: 38px;
-  text-align: center;
-  margin: 8px 0;
-}
-/* CANCHAS */
 .field-container {
   display: flex;
   flex-wrap: wrap;
@@ -826,7 +830,7 @@ p {
   text-align: center;
   margin-top: 12px;
 }
-/* BOTÓN RESERVAR */
+
 .boton-reservar {
   display: inline-block;
   background-color: #006d04;
@@ -843,7 +847,7 @@ p {
   background-color: #00a52b;
   transform: scale(1.05);
 }
-/* TABLA DE PRECIOS */
+
 .tabla-precios {
   width: 100%;
   max-width: 600px;
@@ -863,7 +867,7 @@ p {
   background-color: #006d04;
   color: white;
 }
-/* HORARIOS Y UBICACIÓN */
+
 .schedule,
 .ubication {
   text-align: center;
@@ -882,7 +886,7 @@ iframe {
   z-index: 1000;
 }
 
-/* PAGINA DEL COMPLEJO LA 10 */
+
 .la10-page {
   width: min(100% - 40px, 1000px);
   margin: 35px auto 60px;
@@ -953,7 +957,7 @@ iframe {
   }
 }
 
-/* Ajustes de contenido y canchas de La 10 */
+
 .la10-topbar {
   display: flex;
   justify-content: space-between;
@@ -996,6 +1000,7 @@ iframe {
   font-size: 17px;
   line-height: 1.4;
 }
+
 .la10-fields {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1048,7 +1053,7 @@ iframe {
     height: 210px;
   }
 }
-/* BOOKING FORM */
+
 .booking-page {
   width: min(100% - 40px, 480px);
   margin: 60px auto;
@@ -1135,16 +1140,16 @@ iframe {
   display: block;
 }
 
-/* -------------------------------------------------------- */
-/* HAMBURGER MENU                                           */
-/* -------------------------------------------------------- */
 
-/* Hide the actual checkbox (it's only used as a state toggle) */
+
+
+
+
 .nav-toggle {
   display: none;
 }
 
-/* Hide the hamburger icon on desktop */
+
 .hamburger {
   display: none;
   font-size: 2rem;
@@ -1154,14 +1159,14 @@ iframe {
   user-select: none;
 }
 
-/* Show hamburger icon on mobile */
+
 @media (max-width: 768px) {
-  /* Show the hamburger ☰ icon */
+
   .hamburger {
     display: inline-block;
   }
 
-  /* Hide nav links by default on mobile */
+
   header nav {
     display: none;
     width: 100%;
@@ -1171,12 +1176,12 @@ iframe {
     padding: 10px 0;
   }
 
-  /* When checkbox is checked, show the nav */
+
   .nav-toggle:checked ~ nav {
     display: flex;
   }
 
-  /* Make header a column so nav opens below the logo/hamburger */
+
   header {
     display: flex;
     flex-direction: column;
@@ -1185,7 +1190,7 @@ iframe {
     padding: 10px 15px;
   }
 
-  /* Put logo and hamburger icon on the same row */
+
   header .logo {
     width: 100%;
     display: flex;
