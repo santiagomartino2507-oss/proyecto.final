@@ -1,17 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("hola, estoy cargado");
-
-  function t(key, fallback) {
-    const lang = localStorage.getItem("preferredLang") || "en";
-    if (
-      typeof translations !== "undefined" &&
-      translations[lang] &&
-      translations[lang][key]
-    ) {
-      return translations[lang][key];
-    }
-    return fallback;
-  }
+document.addEventListener("DOMContentLoaded", () => { // Wait for the HTMl to be fully load
+  console.log("hola, estoy cargado"); // Log to the console to confirm that the script is loaded
 
   const feedback =
     document.getElementById("feedback") || document.querySelector(".lbl-error");
